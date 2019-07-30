@@ -3,11 +3,11 @@ FROM debian:stretch-slim
 RUN apt-get update
 
 # Essential tools
-RUN apt install git
-RUN apt install wget
+RUN apt install -y git
+RUN apt install -y wget
 
 # Essential build tools
-RUN apt install gcc make bc
+RUN apt install -y gcc make bc
 
 # MTK DrvGen Requirements
-RUN apt install libglib2.0-0 libgl1
+RUN apt install -y libglib2.0-0 libgl1
